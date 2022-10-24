@@ -1,0 +1,27 @@
+.Container {
+    top: 19px;
+    left: 19px;
+    background-color: #fff;
+    box-shadow: 0 6px 18px rgb(11,20,26,.05);
+    display: flex;
+    overflow: hidden;
+    width: calc(100% - 38px);
+    height: calc(100% - 38px);
+    position: absolute;
+    z-index: 10;
+    animation: animation 0.3s cubic-bezier(.1,.82,.25,1);
+}
+
+@keyframes animation {
+    0%{ opacity: 0; transform: scale(1.4); }
+    100%{ opacity: 1; transform: scale(1); }
+}
+
+.Header {
+    background-color: #f0f2f5;
+    display: flex;
+    position: absolute;
+    z-index: 1000;
+    width: 100%;
+    padding-top: 10px
+}
