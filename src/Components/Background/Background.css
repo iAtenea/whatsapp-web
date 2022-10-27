@@ -1,15 +1,7 @@
 .App-header {
-    background-color: #00A884;
+  background: linear-gradient(to bottom, #00A884 0%, #00A884 17%, #f0f2f5 17%, #f0f2f5 100%);
     position: relative;
     width: 100%;
-    height: 17vh;
+    height: 100vh;
     z-index: 1;
   }
-
-.App-body {
-    background-color: #eae6df;
-    position: relative;
-    height: 83vh;
-    overflow: hidden;
-    z-index: 1;
-}

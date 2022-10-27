@@ -1,11 +1,13 @@
 import React from 'react';
+import FirstColumn from '../FirstColumn/FirstColumn';
 import './Background.css';
 
 function Background() {
   return (
     <>
-      <div className="App-header"></div>
-      <div className="App-body"></div>
+      <div className="App-header">
+        <FirstColumn />
+      </div>
     </>
   );
 }

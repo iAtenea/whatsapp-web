@@ -1,0 +1,138 @@
+.Searcher-container {
+    display: flex;
+    width: 100%;
+    height: 49px;
+    z-index: 150;
+    box-sizing: border-box;
+    background-color: #fff;
+    align-items: center;
+    font-family: Segoe UI,Helvetica Neue,Helvetica,Lucida Grande,Arial,Ubuntu,Cantarell,Fira Sans,sans-serif;
+}
+
+.Input-container {
+    margin: 8px 0 8px 10px;
+    background-color:#f0f2f5;
+    border-radius: 8px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 35px;
+    width: 100%;
+}
+
+.Search-icon svg {
+    z-index: 150;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    margin-left: 8px;
+    transition: opacity .14s linear
+}
+
+.Input-searcher {
+    border: none;
+    outline: none;
+    background-color: #f0f2f5;
+    padding: 0;
+    font-size: 15px;
+    width: 80%;
+    height: 35px;
+    line-height: 20px;
+    margin-left: 10px;
+    font-size: 13px;
+    font-family: 'Noto Sans Vai', sans-serif;
+    text-indent: 10px;
+}
+
+::placeholder {
+    text-indent: 10px;
+}
+
+.Filter-icon svg {
+    z-index: 150;
+    width: 26px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+}
+
+.animate__rotateInUpRight  {
+    animation-duration: 0.3s;
+}
+
+.animate__rotateInDownRight {
+    animation-duration: 0.3s;
+}
+
+.Searcher-border-line {
+    width: 100%;
+    background-color: #e9edef;
+}
+
+// INICIA EL BOTON DE ARCHIVADOS
+
+.PaneSide-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.Button-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 49px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    pointer-events: all;
+}
+
+.Archived-icon {
+    display: flex;
+    align-items: center;
+    width: 49px;
+    height: 49px;
+    padding: 0 14px;
+    margin-top: 0;
+}
+
+.Archived-icon svg {
+    width: 18px;
+    height: 18px;
+}
+
+.Archived-title {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    justify-content: center;
+    align-content: center;
+    text-align: left;
+    font-family: 'Noto Sans Vai', sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    overflow-wrap: break-word;
+    height: 49px;
+}
+
+.Archived-count {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding: 0 15px 0 0;
+    color: #00A884;
+}
+
+.Border-line {
+    width: 100%;
+    background-color: #fff;
+}
+
+.Border-chats {
+    margin-left: 77px;
+    height: 1px;
+    background-color: #e9edef;
+    box-sizing: border-box;
+}
