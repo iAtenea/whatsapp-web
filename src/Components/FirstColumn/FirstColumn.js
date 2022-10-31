@@ -15,8 +15,8 @@ function FirstColumn() {
             <ProfilePhoto />
             <IconsHeader />
           </div>
+          <Searcher />
           <div className="Side-area">
-            <Searcher />
             <PaneSide />
           </div>
         </div>
