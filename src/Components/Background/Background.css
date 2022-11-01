@@ -1,7 +1,33 @@
 .App-header {
   background: linear-gradient(to bottom, #00A884 0%, #00A884 17%, #f0f2f5 17%, #f0f2f5 100%);
     position: relative;
+    display: flex;
+    flex-direction: row;
     width: 100%;
     height: 100vh;
     z-index: 1;
   }
+
+  .General-container {
+    display: flex;
+  }
+
+.Two-colums-container {
+  top: 19px;
+  left: 19px;
+  background-color: #fff;
+  box-shadow: 0 6px 18px rgb(11,20,26,.05);
+  display: flex;
+  overflow: hidden;
+  width: calc(100% - 38px);
+  height: calc(100% - 38px);
+  position: absolute;
+  z-index: 2;
+  animation: animation 0.3s cubic-bezier(.1,.82,.25,1);
+}
+
+@media screen and (min-width: 1441px) {
+  .Two-colums-container {
+    margin: 0 auto;
+    box-shadow: 0 6px 18px rgba(11,20,26,.05);
+}}

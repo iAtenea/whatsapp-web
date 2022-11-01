@@ -7,6 +7,7 @@
     background-color: #fff;
     align-items: center;
     font-family: Segoe UI,Helvetica Neue,Helvetica,Lucida Grande,Arial,Ubuntu,Cantarell,Fira Sans,sans-serif;
+    border-bottom: 1px solid #e9edef;
 }
 
 .Input-container {
@@ -225,11 +226,16 @@
 
 .Nav-menu {
     background-color: #fff;
+    transform-origin: left top;
+    left: 500px;
+    top: 173.5px;
     border-radius: 3px;
     box-shadow: 0 2px 5px 0 rgba(11,20,26,.26),0 2px 10px 0 rgba(11,20,26,.16);
     font-family: 'Noto Sans Vai', sans-serif;
     z-index: 7;
     overflow: visible;
+    position: absolute;
+    z-index: 10000;
 }
 
 .Nav-list {
@@ -248,6 +254,5 @@
 
 .Nav-item:hover, .animate__backInRight {
     background-color: #f0f2f5;
-    
 }
 

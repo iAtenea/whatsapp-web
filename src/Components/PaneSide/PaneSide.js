@@ -2,7 +2,7 @@ import React from 'react';
 import ChatBox from './ChatBox';
 import './SideArea.css';
 
-function PaneSide() {
+function PaneSide({ setShouldShowMenu, shouldShowMenu }) {
   const svgArchived = (
     <svg
       viewBox="0 0 20 20"
@@ -29,7 +29,10 @@ function PaneSide() {
         <div className="Border-line">
           <div className="Border-chats"></div>
         </div>
-        <ChatBox />
+        <ChatBox
+          setShouldShowMenu={setShouldShowMenu}
+          shouldShowMenu={shouldShowMenu}
+        />
       </div>
     </>
   );

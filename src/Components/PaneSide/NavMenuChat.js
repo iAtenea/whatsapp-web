@@ -1,9 +1,9 @@
 import React from 'react';
 import './SideArea.css';
 import 'animate.css';
+import NavMenuList from './NavMenuList';
 
-function NavMenuChat() {
-  const [shouldShowMenu, setShouldShowMenu] = React.useState(false);
+function NavMenuChat({ setShouldShowMenu, shouldShowMenu }) {
   const svgDownArrow = (
     <svg
       viewBox="0 0 18 18"
@@ -21,31 +21,22 @@ function NavMenuChat() {
     </svg>
   );
 
-  const navMenu = (
-    <div className="Nav-menu">
-      <ul className="Nav-list">
-        <li className="Nav-item">Archivar chat</li>
-        <li className="Nav-item">Silenciar notificaciones</li>
-        <li className="Nav-item">Eliminar chat</li>
-        <li className="Nav-item">Fijar chat</li>
-        <li className="Nav-item">Editar etiqueta</li>
-        <li className="Nav-item">Marcar como no leído</li>
-      </ul>
-    </div>
-  );
-
-  const toggleNavMenu = () => {
+  const toggleNavMenu = (e) => {
     setShouldShowMenu(!shouldShowMenu);
+    console.log(e.clientY);
   };
 
   return (
     <>
+      <NavMenuList
+        setShouldShowMenu={setShouldShowMenu}
+        shouldShowMenu={shouldShowMenu}
+      />
       <nav>
         <button className="DownArrowButton" onClick={toggleNavMenu}>
           {svgDownArrow}
         </button>
       </nav>
-      {shouldShowMenu === true ? <div>{navMenu}</div> : null}
     </>
   );
 }
